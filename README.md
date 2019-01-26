@@ -7,7 +7,7 @@
 [![IDE](https://img.shields.io/badge/Android%20Studio-3.2.1-brightgreen.svg)(https://developer.android.com/about/)
 
 <p align="center" >
-<img src="README_RES/000screen_shot.png" height="700" width="300">
+<img src="README_RES/000screen_shot.png" width="300">
 </p>
 
 ## Table of Contents
