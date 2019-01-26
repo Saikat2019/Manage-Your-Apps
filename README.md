@@ -2,8 +2,8 @@
 
 <img src="README_RES/icon.jpeg" align="right" />
 
-> Used Programming languages/Libraries
 [![Language](https://img.shields.io/badge/Java-18.9-8f00b3.svg)](https://www.java.com/en/)
+
 [![IDE](https://img.shields.io/badge/Android%20Studio-3.2.1-brightgreen.svg)](https://developer.android.com/about/)
 
 <p align="center" >
