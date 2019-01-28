@@ -4,7 +4,7 @@ import android.graphics.drawable.Drawable;
 
 import java.io.Serializable;
 
-public class AppInfo implements Serializable {  //TODO : know more about serializable
+public class AppInfo implements Serializable {
 
     private String name;
     private String apk;

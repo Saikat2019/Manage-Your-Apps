@@ -6,51 +6,38 @@ import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.os.AsyncTask;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.SearchView;
-import android.support.v7.widget.Toolbar;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
-import java.util.Set;
 
 public class MainActivity extends AppCompatActivity {
-//TODO - done upto how to get applist , next have to work on how to show them in recycler view
 
     //general variables
     private List<AppInfo> appList;
-    private List<AppInfo> appSystemList;
-    private List<AppInfo> appHiddenList;
 
     private AppAdapter appAdapter;
 
     //configuration variables
-    private Boolean doubleBackToExitDone = false;
-    private Toolbar toolbar;
-    private Activity activity; //TODO know more about activity and context
+    private Activity activity;
     private Context context;
     private RecyclerView recyclerView;
 
 
 
 
-    @Override
+    @Override               //Bundle s are used to pass data between activity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         this.activity = this;
         this.context = this;
-
-//        setInitialConfiguration();
-//        checkAndAddPermission(activity);
-//        setAppDir();
 
         recyclerView = findViewById(R.id.appList);
 
@@ -72,8 +59,7 @@ public class MainActivity extends AppCompatActivity {
             actualApps = 0;
 
             appList = new ArrayList<>();
-            appSystemList = new ArrayList<>();
-            appHiddenList = new ArrayList<>();
+
         }
 
         @Override
